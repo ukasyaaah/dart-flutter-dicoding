@@ -1,3 +1,10 @@
+// Alur aplikasi konversi suhu kita akan seperti berikut:
+
+// Menerima input suhu fahrenheit dari pengguna.
+// Melakukan konversi sesuai rumus.
+// Menampilkan hasil konversi.
+
+
 import 'dart:io';
 
 void main() {
