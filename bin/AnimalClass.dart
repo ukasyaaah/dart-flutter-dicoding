@@ -1,10 +1,11 @@
 void main() {
-  var myCat = Animal('Brino', 12, 8);
+  var myCat = Animal('Brino', 12, 8)
+    // cascade notation
+    ..eat()
+    ..poop();
 
   print(myCat.weight);
   print(myCat._name);
-  myCat.eat();
-  myCat.poop();
 }
 
 class Animal {
@@ -12,7 +13,7 @@ class Animal {
   int _age;
   double _weight;
 
-  Animal(this._name, this._age, this._weight);
+  Animal(this._name, this._age, this._weight) {}
 
   // getter
   String get name => _name;
