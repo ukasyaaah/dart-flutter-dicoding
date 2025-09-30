@@ -1,14 +1,9 @@
 void main() {
-  var myCat = Animal('Brino', 12, 8)
-    // cascade notation
-    ..eat()
-    ..poop();
 
-  print(myCat.weight);
-  print(myCat._name);
+
 }
 
-class Animal {
+abstract class Animal {
   String _name;
   int _age;
   double _weight;
