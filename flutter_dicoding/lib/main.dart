@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dicoding/screens/widget.dart';
 import 'package:flutter_dicoding/screens/first_screen.dart';
 import 'package:flutter_dicoding/screens/home.dart';
-import 'package:flutter_dicoding/widgets/bigger_text.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.lightGreen),
       initialRoute: '/',
       title: 'Flutter Dicoding',
-      routes: {'/': (context) => Home(), '/first': (context) => FirstScreen()},
+      routes: {
+        '/': (context) => Home(),
+        '/first': (context) => FirstScreen(),
+        '/widget': (context) => WidgetScreen(),
+      },
     );
   }
 }

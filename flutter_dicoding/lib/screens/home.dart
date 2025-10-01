@@ -21,10 +21,23 @@ class Home extends StatelessWidget {
         actionsPadding: EdgeInsets.symmetric(horizontal: 22),
         actionsIconTheme: IconThemeData(color: Colors.white, size: 24),
       ),
-      body: TeBu(
-        text: 'First Screen',
-        color: Colors.lightGreen,
-        route: '/first',
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TeBu(
+              text: 'First Screen',
+              color: Colors.lightGreen,
+              route: '/first',
+            ),
+            SizedBox(height: 10),
+            TeBu(
+              text: 'Widget Screen',
+              color: Colors.lightBlueAccent,
+              route: '/widget',
+            ),
+          ],
+        ),
       ),
     );
   }
