@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dicoding/screens/media_query.dart';
+import 'package:flutter_dicoding/screens/navigation/first.dart';
 import 'package:flutter_dicoding/screens/widget.dart';
 import 'package:flutter_dicoding/screens/first_screen.dart';
 import 'package:flutter_dicoding/screens/home.dart';
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => Home(),
         '/first': (context) => FirstScreen(),
         '/widget': (context) => WidgetScreen(),
+        '/mq': (context) => MediaQueryScreen(),
+        '/nav': (context) => FirstNavScreen(),
       },
     );
   }
