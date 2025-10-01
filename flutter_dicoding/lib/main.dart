@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dicoding/screens/first_screen.dart';
+import 'package:flutter_dicoding/screens/home.dart';
+import 'package:flutter_dicoding/widgets/bigger_text.dart';
 
 void main() => runApp(MyApp());
 
@@ -6,17 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hello World',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.lightGreen),
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.lightGreen,
-          title: Text('Hello WOrld'),
-          leading: Icon(Icons.menu),
-        ),
-        body: Center(child: Text('Hello World')),
-      ),
+      initialRoute: '/',
+      title: 'Flutter Dicoding',
+      routes: {'/': (context) => Home(), '/first': (context) => FirstScreen()},
     );
   }
 }
