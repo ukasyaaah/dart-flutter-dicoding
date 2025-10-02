@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wisatakota/detail_screen.dart';
 import 'package:wisatakota/main_screen.dart';
 
 void main() {
@@ -15,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Wisata Kota',
-      theme: ThemeData(),
       home: MainScreen(),
     );
   }
